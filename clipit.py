@@ -934,8 +934,9 @@ def do_run(args):
         except KeyboardInterrupt:
             pass
 
-    if args.make_video:
-        do_video(args)        #was do_video(settings)
+###    moved this to its own cola step (no need to generate a movie if what you want are the steps)
+###    if args.make_video:
+###        do_video(args)        #was do_video(settings)
 
 def do_video(args):
     global cur_iteration
